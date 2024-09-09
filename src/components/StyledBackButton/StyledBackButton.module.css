@@ -1,0 +1,22 @@
+.button {
+  padding: var(--spacing-level3) var(--spacing-level6);
+  margin-top: var(--spacing-level5);
+  color: var(--primary-text-color);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Jedi";
+  margin-bottom: var(--spacing-level6);
+}
+
+/* ligth side */
+.lightButton {
+  background-color: var(--light-side);
+}
+
+/* dark side  */
+.darkButton {
+  background-color: var(--dark-side);
+}

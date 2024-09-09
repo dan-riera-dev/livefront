@@ -1,0 +1,46 @@
+.outerContainer {
+  display: flex;
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: "Jhol";
+}
+
+.subHeader {
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-family: "Jedi";
+  margin: 0;
+}
+
+.imageStyle {
+  max-width: 15vw;
+  align-self: center;
+}
+
+.homeButton {
+  padding: var(--spacing-level2) var(--spacing-level6);
+  margin-top: var(--spacing-level5);
+  color: var(--star-yellow);
+  border: 2px solid var(--star-yellow);
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: "Jhol";
+  text-align: center;
+  cursor: pointer;
+}

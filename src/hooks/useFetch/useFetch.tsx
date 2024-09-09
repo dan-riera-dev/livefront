@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import axios, { AxiosError, AxiosResponse } from "axios";
+import axios, { AxiosResponse } from "axios";
 
 interface FetchData {
   data: AxiosResponse["data"];
@@ -7,7 +7,7 @@ interface FetchData {
   error: AxiosResponse["data"];
 }
 
-const useFetch = (url: string) => {
+export const useFetch = (url: string) => {
   const [data, setData] = useState<FetchData["data"]>(null);
   const [loading, setLoading] = useState<FetchData["loading"]>(true);
   const [error, setError] = useState<FetchData["error"]>(null);
@@ -29,5 +29,3 @@ const useFetch = (url: string) => {
 
   return { data, loading, error };
 };
-
-export default useFetch;

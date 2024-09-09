@@ -1,0 +1,68 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.outerContainer {
+  display: flex;
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: "Jhol";
+  animation: fadeIn 8s ease forwards;
+}
+
+.subheader {
+  color: var(--secondary-text-color);
+  font-family: "Jedi";
+  font-size: 3em;
+  margin: 0;
+  text-decoration: none;
+}
+
+.subheader:hover {
+  transition: color 4s;
+  animation: pulse 3s infinite;
+}
+
+.lightSubheader:hover {
+  color: var(--light-side);
+}
+
+.darkSubheader:hover {
+  color: var(--dark-side);
+}
+
+.subheaderContainer {
+  display: flex;
+  justify-content: space-around;
+}

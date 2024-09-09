@@ -1,0 +1,23 @@
+export type Character = {
+  affiliations: Array<string>;
+  apprentices: Array<string>;
+  born: number;
+  bornLocation: string;
+  cybernetics: string;
+  died: number;
+  diedLocation: string;
+  eyeColor: string;
+  formerAffiliations: Array<string>;
+  gender: string;
+  hairColor: string;
+  height: number;
+  homeworld: string;
+  id: number;
+  image: string;
+  mass: number;
+  masters: Array<string>;
+  name: string;
+  skinColor: string;
+  species: string;
+  wiki: string;
+};

@@ -1,13 +1,17 @@
 import { BackgroundParticles } from "../../components/BackgroundParticles";
 import errorImage from "../../assets/images/errorImage.png";
-import * as styles from "./ErrorScreen.styles";
+import styles from "./ErrorScreen.module.css";
+import { Link } from "react-router-dom";
 export const ErrorScreen = () => {
   return (
-    <div style={styles.outterContainer}>
-      <div style={styles.innerContainer}>
-        <img src={errorImage} style={styles.imageStyle} />
-        <h1 style={styles.title}>Beep boop beep..</h1>
-        <p style={styles.subHeader}>Please try again later</p>
+    <div className={styles.outerContainer}>
+      <div className={styles.innerContainer}>
+        <img src={errorImage} className={styles.imageStyle} alt="" />
+        <h1 className={styles.title}>Beep boop beep..</h1>
+        <p className={styles.subHeader}>Please try again later</p>
+        <Link className={styles.homeButton} to="/">
+          Home
+        </Link>
       </div>
       <BackgroundParticles />
     </div>

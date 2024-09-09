@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.outerContainer {
+  display: "flex";
+}
+
+.innerContainer {
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center";
+  justify-content: center;
+}
+
+.sphereText {
+  margin: var(--spacing-level0);
+  font-family: "jhol";
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.sphereContainer {
+  width: 175px;
+  height: 175px;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 36px 60px 8px 60px;
+  transition: box-shadow 0.8s;
+  box-shadow: 0 0 10px #000000;
+  opacity: 0;
+  animation: fadeIn 6s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sphereContainer {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* light side  */
+.lightSphereContainer {
+  border: 2px solid var(--light-side);
+}
+
+.lightSphereContainer:hover {
+  box-shadow: 0 0 30px var(--light-side);
+}
+
+/* dark side  */
+.darkSphereContainer {
+  border: 2px solid var(--dark-side);
+  box-shadow: 0 0 10px #bbbbbb;
+}
+
+.darkSphereContainer:hover {
+  box-shadow: 0 0 30px var(--dark-side);
+}

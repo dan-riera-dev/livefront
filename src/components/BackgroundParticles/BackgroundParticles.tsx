@@ -1,17 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import {
-  Container,
-  ISourceOptions,
-  MoveDirection,
-  OutMode,
-  ZIndex,
-} from "@tsparticles/engine";
+import { Container, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-export const BackgroundParticles = () => {
+interface BackgroundParticlesProps {
+  isLight?: boolean;
+}
+export const BackgroundParticles: FC<BackgroundParticlesProps> = ({
+  isLight,
+}) => {
   const [init, setInit] = useState(false);
-
+  const colorValue =
+    isLight === undefined ? "#FFFFFF" : isLight ? "#03a9f4" : "#a50000";
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -20,9 +20,7 @@ export const BackgroundParticles = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
+  const particlesLoaded = async (container?: Container): Promise<void> => {};
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -37,7 +35,7 @@ export const BackgroundParticles = () => {
           enable: true,
         },
         color: {
-          value: "#FFFFFF",
+          value: colorValue,
         },
         shape: {
           type: "circle",
@@ -56,7 +54,7 @@ export const BackgroundParticles = () => {
         },
         move: {
           enable: true,
-          speed: 0.2,
+          speed: 0.4,
           direction: "top",
           straight: true,
           warp: true,
@@ -92,7 +90,7 @@ export const BackgroundParticles = () => {
 
       detectRetina: true,
     }),
-    []
+    [colorValue]
   );
 
   if (init) {
