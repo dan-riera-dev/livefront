@@ -6,15 +6,23 @@ In this project, I initially started using GraphQL and Apollo Client to manage d
 
 ![ScreenRecording2024-09-08at1 56 53PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9232f1af-94a7-4be1-bca5-a110c6727157)
 
+### Setup
+- Clone repo `git@github.com:dan-riera-dev/livefront.git`
+- Run `yarn`
+- Run `yarn start` to start site
+- Run `yarn test --coverage` to run test suite with coverage
+
 ### Key points:
 
 - Developed a unified color and spacing theme for consistent design and streamlined spacing across the app.
 - Separated business logic from UI using reusable components for improved maintainability and scalability.
 - Created a Character type to ensure type safety and reduce redundancy in data handling.
 - Designed generalized error and loading screens for better user experience and code reuse.
+- Handled API 404 errors by creating a custom function to detect broken image URLs and display a fallback image.
+
+### A11y
 - Enhanced accessibility with ARIA labels, roles, and tabIndex to support users with assistive technologies.
 - Implemented reduced motion preferences to accommodate users with motion sensitivities.
-- Handled API 404 errors by creating a custom function to detect broken image URLs and display a fallback image.
 
 ### Improvement Opportunities
 
@@ -42,6 +50,7 @@ In this project, I initially started using GraphQL and Apollo Client to manage d
 https://github.com/user-attachments/assets/71f00fc8-91d7-413b-ae45-bcc506069444
 
 
-
+### API 
+- git@github.com:dan-riera-dev/livefront.git
 
 
