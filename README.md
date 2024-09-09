@@ -22,6 +22,9 @@ In this project, I initially started using GraphQL and Apollo Client to manage d
 - Implement lazy loading for images to optimize page performance and reduce initial load times.
 - Further enhance accessibility features to provide an inclusive experience for all users.
 - Reduce styling to be more concise and centralized, apply global styling where relevant.
+  
+### Known Issues
+- The API returns a default placeholder image, which I replace with my own default image. This replacement causes a delay in image loading, as noted in point 2 of the Improvement Opportunities.
 
  ### Tested Browsers
   - Tested on Chrome, Safari, FireFox and mobile iOS and Android
