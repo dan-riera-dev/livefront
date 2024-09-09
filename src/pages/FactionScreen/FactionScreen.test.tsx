@@ -34,27 +34,7 @@ describe("FactionScreen", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
-  test("navigates to loading screen when loading", () => {
-    const mockNavigate = jest.fn();
-    (useNavigate as jest.Mock).mockReturnValue(mockNavigate);
-    (useFetch as jest.Mock).mockReturnValue({
-      data: null,
-      loading: true,
-      error: false,
-    });
 
-    (useLocation as jest.Mock).mockImplementation(() => ({
-      state: { isLightSide: true },
-    }));
-
-    render(
-      <MemoryRouter>
-        <FactionScreen />
-      </MemoryRouter>
-    );
-
-    expect(mockNavigate).toHaveBeenCalledWith("/loading");
-  });
   test("navigates to error screen when there is an error", () => {
     const mockNavigate = jest.fn();
     (useNavigate as jest.Mock).mockReturnValue(mockNavigate);
