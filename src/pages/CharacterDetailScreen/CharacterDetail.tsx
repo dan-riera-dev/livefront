@@ -14,7 +14,7 @@ const renderListItem = (
     return null;
   }
 
-  const renderValue = (val: string) => (isList ? val.toLocaleLowerCase() : val);
+  const renderValue = (val: string) => (isList ? val.toLowerCase() : val);
 
   const formattedLabel = isLight ? `$ ${label}` : `# ${label}`;
 

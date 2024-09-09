@@ -45,7 +45,6 @@ export const CharacterSphere: FC<CharacterSphereProps> = ({
         }`}
         src={imageSrc}
         alt={`Portrait of ${characterName}`}
-        onError={() => setImageSrc(defaultImage)}
         aria-hidden={false}
         loading="eager"
       />
@@ -53,7 +52,7 @@ export const CharacterSphere: FC<CharacterSphereProps> = ({
         className={styles.sphereText}
         aria-label={`Character name: ${characterName}`}
       >
-        {characterName.toLocaleLowerCase()}
+        {characterName.toLowerCase()}
       </h2>
     </div>
   );
