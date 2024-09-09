@@ -11,6 +11,7 @@ In this project, I initially started using GraphQL and Apollo Client to manage d
 - Run `yarn`
 - Run `yarn start` to start site
 - Run `yarn test --coverage` to run test suite with coverage
+- Use option `a` to run all tests
 
 ### Key points:
 
