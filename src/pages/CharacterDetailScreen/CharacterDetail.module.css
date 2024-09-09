@@ -8,8 +8,8 @@
 }
 
 .outerContainer {
-  padding: var(--spacing-level8);
-  min-width: 100vw;
+  /* padding: var(--spacing-level3); */
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: va;
+  margin: var(--spacing-level3);
 }
 
 /* light side */
