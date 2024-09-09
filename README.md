@@ -24,10 +24,14 @@ In this project, I initially started using GraphQL and Apollo Client to manage d
 
  ### Tested Browsers
   - Tested on Chrome, Safari, FireFox and mobile iOS and Android
+   <img width="720" alt="Screenshot 2024-09-09 at 12 30 52 PM" src="https://github.com/user-attachments/assets/2867e59b-d907-4e13-a396-2c98d4576d2e">
+
+### Site Images
+![ScreenRecording2024-09-09at12 59 19PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/a9c6938d-3a27-43a9-a487-31af4622bef0)
 
 ![ScreenRecording2024-09-09at12 28 33PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/74484229-dc1c-404a-b4cb-acbe5f8639ec)
 
-<img width="1040" alt="Screenshot 2024-09-09 at 12 30 52 PM" src="https://github.com/user-attachments/assets/2867e59b-d907-4e13-a396-2c98d4576d2e">
+
 
 
 
