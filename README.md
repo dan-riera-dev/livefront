@@ -31,6 +31,12 @@ In this project, I initially started using GraphQL and Apollo Client to manage d
 
 ![ScreenRecording2024-09-09at12 28 33PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/74484229-dc1c-404a-b4cb-acbe5f8639ec)
 
+### Mobile
+
+
+
+https://github.com/user-attachments/assets/71f00fc8-91d7-413b-ae45-bcc506069444
+
 
 
 
